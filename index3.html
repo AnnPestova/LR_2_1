@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style3.css">
+    <title>Stud Files</title>
+    <link rel = "icon" href="img/п.png" type="image/x-icon">
+</head>
+<header>
+<div class="toggle" onclick="toggleMenu();">
+    <div class="caty">
+        <img src="img/cat.png">
+    </div>
+</div>
+<ul class="menu">
+    <li> <a href="#home" onclick="toggleMenu();">Главная</a></li>
+          <li> 
+            <a href="#hello" onclick="toggleMenu();">Здравствуйте, Анна</a>
+          </li>
+    <li> <a href="#exit" onclick="toggleMenu();">Выход</a></li>
+</ul>
+
+</header>
+<body>
+    <main>
+       <div class="circle"></div> 
+        <div class="register-form-container">
+            <form action="">
+                <div class="registr">
+                <img src="img/pencil.png">
+                <h1 class="form-title">
+                    Новый пост
+                </h1>
+                </div>
+                <div class="form-fields">
+                    <div class="form-field">
+                        <input type="name" placeholder="Название" required>
+                    </div>
+                    <div class="form-field2">
+                        <input type="description" placeholder="Описание" required minlength="8" maxlength="120">
+                    </div>
+                </div>
+                <div class="add">
+                    <img src="img/+.png">
+                    <div class="divider">Файл</div>
+                </div>
+                <div class="form-buttons">
+                    <button class="button">Добавить</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script type="text/javascript">
+    window.addEventListener('scroll', function (){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky',window.scrollY > 0);
+    })
+
+    function toggleMenu(){
+        var menuToggles = document.querySelector('.toggle');
+        var menu = document.querySelector('.menu');
+        menuToggles.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
