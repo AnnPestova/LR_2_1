@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: #DFEAE5;
+    padding: 30px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header .sticky{
+    color: #DFEAE5;
+}
+header ul{
+    position: relative;
+    display: flex;
+    padding-bottom: 60px;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+header ul li a{
+    position: relative;
+    display:flex;
+    margin: 0 50px;
+    color: #696969;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0.08em;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #686567;
+    font-size: 19px; 
+}
+
+main {
+    background: #F1F5FE;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    width: 2534px;
+    height: 2534px;
+    border-radius: 50%;
+    background: rgba(172, 192, 73, 0.3);;
+    box-shadow: 0px 4px 70px 6px rgba(217, 229, 255, 0.25);
+    animation-name: fadeCircle;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeCircle {
+    0% {
+        width: 2534px;
+        height: 2534px;
+    }
+    25% {
+        width: 2000px;
+        height: 2000px;
+    }
+    50% {
+        width: 1500px;
+        height: 1500px;
+    }
+    75% {
+        width: 1000px;
+        height: 1000px;
+    }
+    100% {
+        width: 534px;
+        height: 534px;
+    }
+}
+.register-form-container {
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    max-width: 515px;
+    width: 100%;
+    background: #D9B68F;
+    box-shadow: 0px 6px 50px rgba(217, 229, 255, 0.7);
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    animation-name: fadeForm;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeForm {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.form-title {
+    color: #686567;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+
+}
+.form-field {
+    margin-bottom: 13px;
+
+}
+.form-field2 {
+    margin-bottom: 17px;
+    }
+.form-buttons{
+        margin-top: 10px;
+}
+.button {
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    display:block;
+    height: 45px;
+    background: rgba(172, 192, 73, 0.7);
+    border-radius: 5px;
+    color:#686567;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    border: none;
+}
+.button:hover {
+    background-color: #A3B450;
+}
+a.button {
+    text-decoration: none;
+}
+
+.caty img{
+    width: 100%;
+}
+.registr{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+}
+.registr1{
+    display: flex;
+    justify-content: left;
+    align-content: left;
+    height: 200px;
+}
+.reg img{
+    width: 40px;
+    height: 50px;
+}
+.button-google {
+    color:#686567;
+    background:rgba(172, 192, 73, 0.7);
+}
+.button-google:hover {
+    background: #A3B450;
+    color: #686567;
+}
+.divider {
+    font-size: 15px;
+    line-height: 19px;
+    color: #686567;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.add {
+    display: flex;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+.add img{
+    width: 50px;
+}
+
+
+
+
+@media(max-width: 1024px){
+    header,
+    header .sticky{
+        padding: 20px 120px;
+        z-index: 1000;
+        background: #F1F5FE;
+    }
+    header .menu{
+        position: fixed;
+        top: 79px;
+        left:-100%;
+        display: block;
+        padding: 150px 100px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #DBB182;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    header ul li a{
+        color: #686567;
+        justify-content: center;
+        font-size: 24px;
+        margin: 10px;
+    }
+    .toggle{
+        height: 40px;
+        background: url('../img/menu.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 50px;
+        cursor: pointer;
+    }
+    .caty{
+        width: 80%
+    }
+    .toggle.active{
+        height: 40px;
+        background: url('../img/close.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 40px;
+        cursor: pointer;
+    }
+    header.sticky .toggle{
+        filter: invert(1);
+    }
+    .menu.active{
+        left: 0%;
+    }
+}
+
+@media(max-width: 562px){
+    .circle {
+    position: absolute;
+    width: 50%;
+    z-index: 1;
+    width: 414px;
+    height: 414px;
+    border-radius: 50%;
+    background: rgba(172, 192, 73, 0.3);;
+    box-shadow: 0px 4px 70px 6px rgba(217, 229, 255, 0.25);
+    animation-name: fadeCircle;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeCircle {
+    0% {
+        width: 200px;
+        height: 200px;
+    }
+    25% {
+        width: 300px;
+        height: 300px;
+    }
+    50% {
+        width: 350px;
+        height: 350px;
+    }
+    75% {
+        width: 400px;
+        height: 400px;
+    } 
+    100% {
+        width: 450px;
+        height: 450px;
+    }
+}
+.register-form-container {
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    max-width: 315px;
+    width: 100%;
+    background: #D9B68F;
+    box-shadow: 0px 6px 50px rgba(217, 229, 255, 0.7);
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    animation-name: fadeForm;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeForm {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+}
+@media(max-width: 498px){
+    header .menu{
+        padding: 150px 70px;
+    }
+    header ul li a{
+        color: #686567;
+        justify-content: center;
+        font-size: 20px;
+        margin: 10px;
+    }
+}
+@media(max-width: 478px){
+@keyframes fadeCircle {
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+    25% {
+        width: 150px;
+        height: 150px;
+    }
+    50% {
+        width: 200px;
+        height: 200px;
+    }
+    75% {
+        width: 250px;
+        height: 250px;
+    } 
+    100% {
+        width: 0px;
+        height: 0px;
+    }
+  }
+}
+@media(max-width: 460px){
+    header,
+    header .sticky{
+        padding: px 120px;
+        z-index: 1000;
+        background: #F1F5FE;
+    }
+    header .menu{
+        top: 71px;
+        padding: 150px 70px;
+    }
+}
+@media(max-width: 434px){
+    header .menu{
+        top: 67px;
+        padding: 150px 70px;
+    }
+}
+@media(max-width: 422px){
+    header .menu{
+        top: 64px;
+        padding: 150px 70px;
+    }
+      .caty{
+        width: 80%
+    }
+}
+@media(max-width: 408px){
+    header .menu{
+        top: 60px;
+        padding: 150px 70px;
+    }
+      .caty{
+        width: 80%
+    }
+}
+@media(max-width: 398px){
+    header .menu{
+        top: 61px;
+        padding: 150px 70px;
+    }
+        header ul li a{
+        color: #686567;
+        font-size: 17px;
+    }
+    .toggle{
+        background-size: 30px;
+    }
+    .toggle.active{
+    height: 40px;
+    background-size: 30px;
+}
+@media(max-width: 398px){
+     header .menu{
+        top: 59px;
+        padding: 90px 50px;
+
+    }
+}
+@media(max-width: 382px){
+     header .menu{
+        top: 56px;
+        padding: 90px 50px;
+
+    }
+}
+@media(max-width: 376px){
+     header .menu{
+        top: 52px;
+        padding: 90px 50px;
+    }
+      .toggle{
+        background-size: 20px;
+    }
+    .toggle.active{
+    height: 20px;
+    background-size: 20px;
+    }
+}
+@media(max-width: 358px){
+     header .menu{
+        top: 46px;
+        padding: 70px 50px;
+    }
+}
+@media(max-width: 334px){
+     header .menu{
+        top: 41px;
+        padding: 60px 50px;
+    }
+}
+@media(max-width: 322px){
+     header .menu{
+        top: 40px;
+        padding: 60px 50px;
+    }
+        header ul li a{
+        color: #686567;
+        font-size: 14px;
+    }
+}
+@media(max-width: 316px){
+     header .menu{
+        top: 38px;
+        padding: 60px 50px;
+    }
+        header ul li a{
+        color: #686567;
+        font-size: 12px;
+    }
+}
+@media(max-width: 302px){
+     header .menu{
+        top: 35px;
+        padding: 60px 50px;
+    }
+      .toggle{
+        background-size: 15px;
+    }
+    .toggle.active{
+    height: 15px;
+    background-size: 15px;
+    }
+}
+@media(max-width: 290px){
+     header .menu{
+        top: 31px;
+        padding: 60px 50px;
+    }
+}
