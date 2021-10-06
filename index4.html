@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style4.css">
+    <link rel="stylesheet" href="css/style5.css">
+    <title>Stud Files</title>
+    <link rel = "icon" href="img/п.png" type="image/x-icon">
+</head>
+<header>
+<div class="toggle" onclick="toggleMenu();">
+    <div class="caty">
+        <img src="img/cat.png">
+    </div>
+</div>
+<ul class="menu">
+    <li> <a href="#home" onclick="toggleMenu();">Главная</a></li>
+          <li> 
+            <a href="index.html" onclick="toggleMenu();">Регистрация</a>
+          </li>
+    <li> <a href="index2.html" onclick="toggleMenu();">Вход</a></li>
+</ul>
+
+</header>
+<body>
+    <main>
+      
+        <div class="register-form-container">
+            <form action="">
+                <div class="add">
+                	<div class="divider">Название</div>
+                    <div class="divider">ДД/ММ/ГГГГ</div>
+                    
+                    <div class="form-buttons">
+                        <a href="index5.html"><img src="img/пуск.png">
+                        </a>
+                    </div>
+                    
+                </div>  
+            </form>
+        </div>
+
+        <div class="register-form-container">
+            <form action="">
+                <div class="add">
+                    <div class="divider">Название</div>
+                    <div class="divider">ДД/ММ/ГГГГ</div>
+                    <div class="form-buttons">
+                        <a href="index5.html"><img src="img/пуск.png">
+                        </a>
+                    </div>
+                    
+                </div>  
+            </form>
+        </div>
+        <div class="register-form-container">
+            <form action="">
+                <div class="add">
+                    <div class="divider">Название</div>
+                    <div class="divider">ДД/ММ/ГГГГ</div>
+                    
+                    <div class="form-buttons">
+                       <a href="index5.html"><img src="img/пуск.png">
+                        </a>
+                    </div>
+                    
+                </div>  
+            </form>
+        </div>
+
+    </main>
+    <script type="text/javascript">
+    window.addEventListener('scroll', function (){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky',window.scrollY > 0);
+    })
+
+    function toggleMenu(){
+        var menuToggles = document.querySelector('.toggle');
+        var menu = document.querySelector('.menu');
+        menuToggles.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
+</script>
+<footer id="footer" class="footer">
+        <h1 class="form-title">
+                    Контакты
+        </h1>
+        <div class="add1">
+                <img src="img/mail.png" class="logo"  >
+                <a>
+                    annamorozova157@mail.ru
+                 </a>
+        </div>
+        <div class="add1">
+            <img src="img/mail.png"  class="logo" >
+                <a>zlata180401@mail.ru</a>
+        </div>
+        <div class="divider1"> Все материалы для учебы на Stud Files</div>
+</footer>
+</body>
+</html>
