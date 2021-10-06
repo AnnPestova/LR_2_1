@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style5.css">
+    <title>Stud Files</title>
+    <link rel = "icon" href="img/п.png" type="image/x-icon">
+</head>
+<header>
+<div class="toggle" onclick="toggleMenu();">
+    <div class="caty">
+        <img src="img/cat.png">
+    </div>
+</div>
+<ul class="menu">
+    <li> <a href="#home" onclick="toggleMenu();">Главная</a></li>
+          <li> 
+            <a href="#hello" onclick="toggleMenu();">Здравствуйте, Анна</a>
+          </li>
+    <li> <a href="index4.html" onclick="toggleMenu();">Выход</a></li>
+</ul>
+
+</header>
+<body>
+    <main>
+       <div class="circle"></div> 
+        <div class="register-form-container">
+            <form action="">
+                <div class="registr">
+                	<a> Название </a>
+                </div>
+                <div class="registr1">
+                    <a> Описание </a>
+                </div>
+                <div class="add">
+                	 <div class="divider">Дата добавления</div>
+                	 <div class="divider">Автор поста</div>
+                </div>
+                <div class="form-buttons">
+                    <button class="button">Cкачать</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script type="text/javascript">
+    window.addEventListener('scroll', function (){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky',window.scrollY > 0);
+    })
+
+    function toggleMenu(){
+        var menuToggles = document.querySelector('.toggle');
+        var menu = document.querySelector('.menu');
+        menuToggles.classList.toggle('active');
+        menu.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

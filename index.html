@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Форма регистрации</title>
+</head>
+
+<body>
+    <main>
+        <div class="circle"></div>
+        <div class="register-form-container">
+            <div class="caty">
+                  <img src="img/cat.png">
+            </div>
+            <form action="">
+                <div class="registr">
+                <img src="img/reg.png">
+                <h1 class="form-title">
+                   Регистрация
+                </h1>
+                </div>
+                <div class="form-fields">
+                    <div class="form-field">
+                        <input type="text" placeholder="Имя" required pattern="[а-яА-Я]+"
+                            title="Имя может содержать только буквы.">
+                    </div>
+                    <div class="form-field">
+                        <input type="email" placeholder="E-mail" required>
+                    </div>
+                     <div class="form-field">
+                        <input type="tel" placeholder="Телефон" required minlength="11" maxlength="12">
+                    </div>
+                    <div class="form-field">
+                        <input type="password" placeholder="Пароль" required minlength="8" maxlength="128">
+                    </div>
+                      <div class="form-field">
+                        <input type="password" placeholder="Повторите пароль" required minlength="8" maxlength="128">
+                    </div> 
+                    <div class="box-field">
+                        <input type="checkbox"><span style="color: #686567;">Я согласен на обработку персональных данных</span>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button class="button">Зарегистрироваться</button>
+                        <div class="divider">Уже есть аккаунт?</div>
+                    <a href="index2.html" class="button button-google">Войти</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
